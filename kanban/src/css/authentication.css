@@ -1,0 +1,95 @@
+.authentication{
+    width:100%;
+    height:100%;
+}
+.bg{
+    width:100%;
+    height:100%;
+    background-image: url('../img/main_bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    position: absolute;
+    z-index: -9999;
+}
+
+.login{
+    width:60%;
+    height:60%;
+    z-index: 1;
+    padding-top:10%;
+    margin: 0 auto;
+    text-align: center;
+}
+.auth {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    box-shadow: 5%;
+    
+  }
+  
+  .logo {
+      text-align: center;
+      font-weight: 100;
+      font-size: 80px;
+      -webkit-user-select: none;
+      /* Chrome all / Safari all */
+      -moz-user-select: none;
+      /* Firefox all */
+      -ms-user-select: none;
+      /* IE 10+ */
+      user-select: none;
+      /* Likely future */
+  }
+  
+  a.logo {
+      color: #5B5B5B;
+  }
+  
+  a {
+      cursor: pointer;
+  }
+  
+  .auth .card {
+      width:100%;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.6);
+      border: none;
+      border: 0.1px solid rgba(0,0,0,0.2);
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+    .auth .card {
+      width: 100%;
+    }
+  
+    .logo {
+      font-size: 60px;
+    }
+  }
+  
+  
+  
+  .auth .header {
+      font-size: 18px;
+  }
+  
+  .auth .row {
+      margin-bottom: 0px;
+  }
+  
+  .auth .username {
+    margin-top: 0px;
+  }
+  
+  .auth .btn {
+      width: 90%;
+  }
+  
+  .auth .footer {
+      
+      padding-bottom: 21px;
+  }
