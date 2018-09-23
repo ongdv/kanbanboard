@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Alert from './Alert';
+import Side from './Side.js';
 import '../css/main.css';
 
 class Main extends Component {
@@ -14,9 +16,10 @@ class Main extends Component {
     render() {
         return (
             <div className="main">
-                <div className="side">
-				
-                </div>
+				<Side 
+					userid={this.userid}
+					username= {this.username}
+				/>
                 <div className="content">
                 </div>
             </div>

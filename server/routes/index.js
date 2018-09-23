@@ -9,7 +9,13 @@ router.get('/', function(req, res, next) {
 
 router.post('/login', (req, res, next) => {
   let postData = req.body;
-  var sql = `SELECT * FROM student WHERE id=${req.body.id}`;
+  if(postData.id === "" || postData.pw === ""){
+  	res.send(201, {
+		result: 'id or pw is blank'
+	});
+	return;
+  }
+  var sql = "SELECT * FROM student WHERE id=" + postData.id;
   pool.getConnection((err, con) => {
     if(err){
       throw err;
@@ -43,7 +49,6 @@ router.post('/login', (req, res, next) => {
         });
         return;
       }
-      
     });
   })
 })
